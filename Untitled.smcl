@@ -1,0 +1,102 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\User\Dropbox (Personal)\Apps\opm-education\static_resources\stata\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}28 Mar 2015, 21:17:34
+
+{com}. help log
+
+. do "C:\Users\User\Dropbox\A0148 ESSPIN CS2\Data - CS2 analysis\analysis\esspin_cs2_v2.do"
+{txt}
+{com}. use pupil_panel, clear
+{txt}
+{com}. svyset pseudocode [pweight = pupil_weight_cs], strata(new_stratum) || _n
+{txt}{p 0 7 2}Note: Stage 1 is sampled with replacement;{txt} all further stages will be ignored{p_end}
+
+      pweight:{col 16}{res}pupil_weight_cs
+          {txt}VCE:{col 16}{res}linearized
+  {txt}Single unit:{col 16}{res}missing
+     {txt}Strata 1:{col 16}{res}new_stratum
+         {txt}SU 1:{col 16}{res}pseudocode
+        {txt}FPC 1:{col 16}<zero>
+{p2colreset}{...}
+
+{com}. keep if round == 2
+{txt}(8921 observations deleted)
+
+{com}. 
+. 
+. gen t2 = (full09 == 1 | full10 == 1| full11 == 1 | full12 == 1 | full13 == 1)
+{txt}
+{com}. 
+. // matching 
+. gen age2=school_age*school_age
+{txt}(371 missing values generated)
+
+{com}. gen pi=ptr09*islamic
+{txt}(1336 missing values generated)
+
+{com}. gen tu=teaching_diploma*urban
+{txt}(910 missing values generated)
+
+{com}. gen e2=enrolment09*enrolment09
+{txt}(582 missing values generated)
+
+{com}. 
+. glob covs pi classroom_quality distance_from_lga age2 school_age urban islamic pta double_shift teaching_diploma  ptr09 classrooms09
+{txt}
+{com}. glob covf classroom_quality power distance_from_lga islamic school_age urban nomadic sbmc pta ptr09 teaching_diploma enrolment09 classrooms09 toilet double_shift
+{txt}
+{com}. log using cs2, replace
+{err}log file already open
+{txt}{search r(604):r(604);}
+
+end of do-file
+
+{search r(604):r(604);}
+
+{com}. do "C:\Users\User\Dropbox\A0148 ESSPIN CS2\Data - CS2 analysis\analysis\esspin_cs2_v2.do"
+{txt}
+{com}. use pupil_panel, clear
+{txt}
+{com}. svyset pseudocode [pweight = pupil_weight_cs], strata(new_stratum) || _n
+{txt}{p 0 7 2}Note: Stage 1 is sampled with replacement;{txt} all further stages will be ignored{p_end}
+
+      pweight:{col 16}{res}pupil_weight_cs
+          {txt}VCE:{col 16}{res}linearized
+  {txt}Single unit:{col 16}{res}missing
+     {txt}Strata 1:{col 16}{res}new_stratum
+         {txt}SU 1:{col 16}{res}pseudocode
+        {txt}FPC 1:{col 16}<zero>
+{p2colreset}{...}
+
+{com}. keep if round == 2
+{txt}(8921 observations deleted)
+
+{com}. 
+. 
+. gen t2 = (full09 == 1 | full10 == 1| full11 == 1 | full12 == 1 | full13 == 1)
+{txt}
+{com}. 
+. // matching 
+. gen age2=school_age*school_age
+{txt}(371 missing values generated)
+
+{com}. gen pi=ptr09*islamic
+{txt}(1336 missing values generated)
+
+{com}. gen tu=teaching_diploma*urban
+{txt}(910 missing values generated)
+
+{com}. gen e2=enrolment09*enrolment09
+{txt}(582 missing values generated)
+
+{com}. 
+. glob covs pi classroom_quality distance_from_lga age2 school_age urban islamic pta double_shift teaching_diploma  ptr09 classrooms09
+{txt}
+{com}. glob covf classroom_quality power distance_from_lga islamic school_age urban nomadic sbmc pta ptr09 teaching_diploma enrolment09 classrooms09 toilet double_shift
+{txt}
+{com}. capture log close
+{smcl}
+{com}{sf}{ul off}

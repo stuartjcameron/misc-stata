@@ -1,0 +1,31 @@
+v 3
+d Stata resources by stuart.cameron@opml.co.uk
+d Programmes for easier outputting of tables and graphs, for coding survey responses, and other small utility programmes
+
+p writex Write to Excel spreadsheets more easily.
+p multresp Recode text multiple response variable to dummy or count variables
+p hlog Log to html file
+p spliti Split a local macro into other macros
+p impartial Analyse inequality between two groups
+p getmics Download MICS data, unzip it and convert to Stata format
+p across
+p closeandview
+p corsc
+p csmeans
+p cstab
+p datedlog
+p didtab
+p findtoken
+p gendummies
+p histab
+p histab2
+p hlog
+p multresp
+p normalise
+p pack
+p petab
+p returnas
+p save13
+p unabany
+p xcell
+p commandedit

@@ -1,0 +1,9 @@
+v 1
+d writex. Write to Excel spreadsheets more easily.
+d Stuart Cameron stuart.cameron@opml.co.uk
+
+* I can also insert comments; these will not be displayed.
+* f lines name the files that comprise your package:
+
+f writex.ado
+f writex.sthlp

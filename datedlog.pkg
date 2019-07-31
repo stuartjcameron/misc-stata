@@ -1,0 +1,8 @@
+v 1
+d datedlog. Make a log with the date in its file name
+d Stuart Cameron stuart.cameron@opml.co.uk
+
+* I can also insert comments; these will not be displayed.
+* f lines name the files that comprise your package:
+
+f datedlog.ado

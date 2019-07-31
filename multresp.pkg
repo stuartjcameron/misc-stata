@@ -1,0 +1,6 @@
+v 1
+d multresp. Recode text multiple response variable to dummy or count variables
+d Stuart Cameron stuart.cameron@opml.co.uk
+
+f multresp.ado
+f multresp.sthlp

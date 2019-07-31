@@ -1,0 +1,9 @@
+v 1
+d impartial. Analyse inequality between two groups.
+d Stuart Cameron stuart.cameron@opml.co.uk
+
+* I can also insert comments; these will not be displayed.
+* f lines name the files that comprise your package:
+
+f impartial.ado
+f impartial.sthlp

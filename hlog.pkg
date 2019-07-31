@@ -1,0 +1,8 @@
+v 1
+d hlog. Log output to html file
+d Stuart Cameron stuart.cameron@opml.co.uk
+
+* I can also insert comments; these will not be displayed.
+* f lines name the files that comprise your package:
+
+f hlog.ado

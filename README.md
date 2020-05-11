@@ -6,7 +6,7 @@ To list the packages and view help files:
 net cd https://raw.githubusercontent.com/stuartjcameron/misc-stata/master
 ```
 
-The more complete and documented packages are:
+The more complete and documented packages are listed below.
 
 ## impartial 
 Analyse inequality between two groups. A simple inequality measurement tool developed to accompany the [UNESCO Institute for Statistics Handbook on Measuring Equity in Education](http://uis.unesco.org/sites/default/files/documents/handbook-measuring-equity-education-2018-en.pdf)

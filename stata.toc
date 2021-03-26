@@ -1,5 +1,5 @@
 v 3
-d Stata resources by stuart.cameron@opml.co.uk
+d Stata resources by https://github.com/stuartjcameron
 d Programmes for easier outputting of tables and graphs, for coding survey responses, and other small utility programmes
 
 p writex Write to Excel spreadsheets more easily.
